@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Deep Patel</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Deep Patel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Deep Patel profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Deep Patel</h1>
+        <p class="section__text__p2">Student at CUNY Queens College</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/DeepPatel_Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h2>Languages</h2>
+          <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Assembly</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h2>Tools and Frameworks</h2>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>REST API</li>
+            <li>MongoDB</li>
+            <li>GitHub</li>
+            <li>Git</li>
+            <li>WordPress</li>
+            <li>Llama2</li>
+            <li>Appwrite</li>
+            <li>Pandas</li>
+            <li>Wix</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-item">
+          <h2>Data Science Fellow</h2>
+          <h3>CUNY Tech Prep, Remote (July 2024 – Present)</h3>
+        </div>
+
+        <div class="experience-item">
+          <h2>Software Engineering Intern</h2>
+          <h3>Tech Incubator, Queens, New York (Feb 2024 – Apr 2024)</h3>
+          <ul>
+            <li>
+              Designed and implemented a no-code mobile application matching
+              travelers with partners and enabling secure booking.
+            </li>
+            <li>
+              Completed 15 customized Wix websites based on client requirements.
+            </li>
+            <li>
+              Conducted extensive QA testing to identify and resolve deployment
+              issues.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h2>Implementation Specialist Intern (Web Developer Intern)</h2>
+          <h3>Evergreen Investments, Remote (Jul 2023 – Aug 2023)</h3>
+          <ul>
+            <li>
+              Reduced data transfer costs by 80% through efficient method
+              implementation.
+            </li>
+            <li>
+              Automated order processing and storage, eliminating manual data
+              entry.
+            </li>
+            <li>
+              Restructured the company website using WordPress, improving UI/UX
+              design.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">StickyNotes</h2>
+          <p>JavaScript, React, CSS, and Appwrite</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/DPatel03/StickyNotes'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Blog Generator</h2>
+          <p>Llama2, Python, and Conda</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/DPatel03/BlogGenerator'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Weather App</h2>
+          <p>JavaScript, HTML, CSS, and API</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/DPatel03/Weather'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:deep.patel.0603@gmail.com"
+              >deep.patel.0603@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dpatel06/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Deep Patel. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
