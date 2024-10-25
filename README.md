@@ -33,7 +33,7 @@ HTML5
 CSS3
 JavaScript
 Project Structure
-index.html: Main homepage of the portfolio.
-styles/: Folder containing CSS files for styling the website.
-scripts/: Folder containing JavaScript files for functionality.
+index.html: Main homepage of the portfolio. <br>
+styles/: Folder containing CSS files for styling the website. <br>
+scripts/: Folder containing JavaScript files for functionality. <br>
 assets/: Folder containing images, fonts, and other media.
