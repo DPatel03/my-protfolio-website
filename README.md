@@ -1,7 +1,6 @@
 # Deep Patel's Portfolio Website
 
 This is my portfolio website. It showcases my skills, experience, and projects. 
-<<<<<<< HEAD
 =======
 https://dpatel03.github.io/my-protfolio-website/
 >>>>>>> 3fdcd760a09b1d52dfddd2500f1077246c62f12f
@@ -16,7 +15,6 @@ https://dpatel03.github.io/my-protfolio-website/
 
 Feel free to explore and learn more about my work!
 
-<<<<<<< HEAD
 =======
 
 
