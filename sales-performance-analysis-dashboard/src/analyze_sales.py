@@ -134,7 +134,14 @@ def save_tables_and_charts(
     plt.close()
 
     plt.figure(figsize=(10, 5))
-    sns.barplot(data=region_df, x="region", y="margin_pct", palette="Blues_d")
+    sns.barplot(
+        data=region_df,
+        x="region",
+        y="margin_pct",
+        hue="region",
+        palette="Blues_d",
+        legend=False,
+    )
     plt.title("Profit Margin by Region")
     plt.xlabel("Region")
     plt.ylabel("Margin (%)")
@@ -143,7 +150,14 @@ def save_tables_and_charts(
     plt.close()
 
     plt.figure(figsize=(10, 5))
-    sns.barplot(data=category_df, x="category", y="revenue", palette="viridis")
+    sns.barplot(
+        data=category_df,
+        x="category",
+        y="revenue",
+        hue="category",
+        palette="viridis",
+        legend=False,
+    )
     plt.title("Revenue by Category")
     plt.xlabel("Category")
     plt.ylabel("Revenue")
