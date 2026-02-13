@@ -1,0 +1,9 @@
+data/raw/*.csv
+data/warehouse/*.db
+outputs/charts/*.png
+outputs/tables/*.csv
+
+!data/raw/.gitkeep
+!data/warehouse/.gitkeep
+!outputs/charts/.gitkeep
+!outputs/tables/.gitkeep
